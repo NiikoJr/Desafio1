@@ -1,0 +1,7 @@
+https://looka.com/blog/logo-color-combinations/
+https://www.wpf-tutorial.com/es/28/paneles/el-control-grid/
+https://www.wpf-tutorial.com/basic-controls/the-textblock-control/
+https://www.youtube.com/watch?v=Vjldip84CXQ
+https://www.tutorialspoint.com/wpf/wpf_controls.htm
+https://wpf-tutorial.com/es/50/controles-de-interfaces-comunes/the-wpf-menu-control/
+https://docs.microsoft.com/es-es/dotnet/framework/winforms/advanced/using-wpf-controls
