@@ -53,5 +53,29 @@ namespace investigacion_dsp_wpf
 
             public string Mail { get; set; }
         }
+
+        string ConvertRichTextBoxContentsToString(RichTextBox rtb)
+
+        {
+
+            TextRange textRange = new TextRange(rtb.Document.ContentStart,
+
+                rtb.Document.ContentEnd);
+
+            return textRange.Text;
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Nombre del aplicante: "+ this.nombre.Text + Environment.NewLine +
+                "Fecha de nacimiento: " + this.nacimiento.SelectedDate.Value.Date.ToShortDateString() + Environment.NewLine +
+                "Sexo: " + this.sexo.Text + Environment.NewLine +
+                "DUI: " + this.dui.Text + Environment.NewLine +
+                "Mail: " + this.mail.Text + Environment.NewLine +
+                "Motivos por los cuales deberia ser aceptado en la academia: " + Environment.NewLine + ConvertRichTextBoxContentsToString(this.razones) +
+                "Cursos seleccionados:" + Environment.NewLine + this.treeView1.ToString()
+                , "Resumen de alumno");
+        }
     }
 }
