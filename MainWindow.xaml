@@ -18,6 +18,14 @@
             <TextBlock Text="Nombre Completo" />
             <TextBox Padding="2" Background="#F9D342"/>
 
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+            </Grid>
+
             <!--email-->
             <TextBlock Text="Correo electronico" />
             <TextBox Padding="2" Background="#F9D342"/>
@@ -27,15 +35,14 @@
 
             <!---->
             <TextBlock Text="Carrera a estudiar:" />
-            <ComboBox Padding="2">
-                <ComboBoxItem>Tec en Idiomas</ComboBoxItem>
+            <ComboBox Padding="2" >
+                <ComboBoxItem IsSelected="True">Tecnico en Idiomas</ComboBoxItem>
+                <ComboBoxItem>Tecnico en Computacion</ComboBoxItem>
+                <ComboBoxItem>Tecnico en Multimedia</ComboBoxItem>
             </ComboBox>
             
-            <TextBox Name="txtValue" />
-		<WrapPanel Margin="0,10">
-			<TextBlock Text="Value: " FontWeight="Bold" />
-			<TextBlock Text="{Binding Path=Text, ElementName=txtValue}" />
-		</WrapPanel>
+            <TextBlock Text="Comentarios" />
+            <TextBox Padding="2" Background="#F9D342" />
             
         </StackPanel>
     </Border>
