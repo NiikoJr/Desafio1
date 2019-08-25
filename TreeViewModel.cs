@@ -79,9 +79,10 @@ namespace investigacion_dsp_wpf
             }
         }
 
+        public static List<TreeViewModel> treeView = new List<TreeViewModel>();
         public static List<TreeViewModel> SetTree(string topLevelName)
         {
-            List<TreeViewModel> treeView = new List<TreeViewModel>();
+            //List<TreeViewModel> treeView = new List<TreeViewModel>();
             TreeViewModel tv = new TreeViewModel(topLevelName);
 
             treeView.Add(tv);
@@ -120,12 +121,24 @@ namespace investigacion_dsp_wpf
             return treeView;
         }
 
+        public static string returnCadena()
+        {
+            string cadena = "";
+
+            foreach (string elem in GetTree())
+            {
+                cadena += elem;
+            }
+            return cadena;
+        }
+
         public static List<string> GetTree()
         {
             List<string> selected = new List<string>();
 
             //select = recursive method to check each tree view item for selection (if required)
-
+            //TreeViewModel root = (TreeViewModel)treeView.Items[0];
+            //List<string> selected = new List<string>(TreeViewModel.GetTree());
             return selected;
 
             //***********************************************************

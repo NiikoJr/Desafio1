@@ -73,9 +73,10 @@ namespace investigacion_dsp_wpf
                 "Sexo: " + this.sexo.Text + Environment.NewLine +
                 "DUI: " + this.dui.Text + Environment.NewLine +
                 "Mail: " + this.mail.Text + Environment.NewLine +
-                "Motivos por los cuales deberia ser aceptado en la academia: " + Environment.NewLine + ConvertRichTextBoxContentsToString(this.razones) +
-                "Cursos seleccionados:" + Environment.NewLine + this.treeView1.ToString()
+                "Motivos por los cuales deberia ser aceptado en la academia: " + Environment.NewLine + ConvertRichTextBoxContentsToString(this.razones)
+                //+ "Cursos seleccionados:" + Environment.NewLine + TreeViewModel.returnCadena() 
                 , "Resumen de alumno");
+            //no pude obtener los elementos del treeview para mostrarlos en el messagebox de arribita
         }
     }
 }
